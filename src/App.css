@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parent-container {
+  height: auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #c7ccdb;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  margin: 2rem;
+  font-family: Verdana, sans-serif;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.inputBox {
+  width: 100%;
+  background: white;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+  display: block;
+  font-size: 1.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  width: 100%;
+  background: lightsalmon;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+  cursor: pointer;
+  display: block;
+  font-size: 1.25rem;
+}
+
+.container1 .container2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.listBackground {
+  background-color: lightgray;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+.list li {
+  background-color: white;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  color: black;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 60rem;
+}
+
+.complete-button {
+  cursor: pointer;
+  background-color: lightgreen;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  position: absolute;
+  height: 100%;
+  top: 1%;
+  right: -14%;
 }
